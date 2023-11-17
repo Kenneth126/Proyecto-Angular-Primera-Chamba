@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { QueHacemosComponent } from './que-hacemos/que-hacemos.component';
+
 
 import { RouterModule } from '@angular/router';
 
@@ -18,7 +20,8 @@ import { RouterModule } from '@angular/router';
     NosotrosComponent,
     ServiciosComponent,
     ContactoComponent,
-    AppComponent
+    AppComponent,
+    QueHacemosComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { RouterModule } from '@angular/router';
       {path: 'Nosotros', component: NosotrosComponent },
       {path: 'Home' , component: HomeComponent},
       {path: 'Servicios', component: ServiciosComponent},
-      {path: 'Contacto', component: ContactoComponent}
+      {path: 'Contacto', component: ContactoComponent},
+      {path: 'Que Hacemos', component:QueHacemosComponent}
     ])
   ],
   providers: [],

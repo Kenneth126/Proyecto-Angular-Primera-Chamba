@@ -9,7 +9,6 @@ export class HomeComponent {
 
 }
 
-// Initialization for ES Users
 import {
   Carousel,
   initTE,

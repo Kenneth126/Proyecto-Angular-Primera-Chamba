@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
@@ -15,13 +15,15 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent,
+
     HomeComponent,
     NosotrosComponent,
     ServiciosComponent,
     ContactoComponent,
     AppComponent,
-    QueHacemosComponent
+    QueHacemosComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,5 +45,7 @@ import {
   Dropdown,
   initTE,
 } from "tw-elements";
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 initTE({ Collapse, Dropdown, Carousel });
